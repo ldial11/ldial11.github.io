@@ -29,3 +29,30 @@ section ul {
     padding-left: 0;    
     padding-bottom: 25px;        
 }
+table {
+    border-collapse: collapse;
+    margin: 50px auto; /* centers the table */
+    width: 70%; /* optional, adjust as needed */
+  }
+
+  th, td {
+    border: 1px solid white;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    background-color: #4f4f4f;
+  }
+
+  th {
+    background-color: black;
+    font-weight: bold;
+    border: 1px solid white;
+    color: white;
+
+  }
+
+  ol{
+    text-align: center;
+    align-items: center;
+  }
+  
