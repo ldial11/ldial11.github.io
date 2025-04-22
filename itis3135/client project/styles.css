@@ -1,0 +1,115 @@
+body{
+    background-color: #ffcee5;
+    font-family: sans-serif;
+    padding: 20px;
+}
+  
+.gallery-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .gallery {
+    display: flex;
+    overflow-x: hidden; /* Hide overflow to show only one image */
+    scroll-behavior: smooth;
+    width: 600px;
+    position: relative;
+  }
+  
+  .gallery img {
+    flex: 0 0 100%; /* Take up the full gallery width */
+    height: auto;
+    max-height: 600px;
+    width: auto;
+    object-fit: contain;
+    border-radius: 10px;
+    transition: transform 0.3s;
+  }  
+  .gallery img.focused {
+    transform: scale(1.8); /* Increase scale */
+    z-index: 10;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    border: 4px solid #fff;
+  }  
+  .gallery img:hover {
+    transform: scale(1.05);
+  }
+  
+  button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    border-radius: 5px;
+  }
+  
+  .gallery img {
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .gallery-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+  }
+  
+  .gallery img {
+    pointer-events: auto;
+  }
+  
+  #about, #about1, #about2{
+    margin: 100px auto;         
+  width: 60%;                 
+  padding: 100px 40px;       
+  text-align: center;
+  border-radius: 10px;        
+  box-shadow: 0 0 5px;
+  }
+
+  #head{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0 auto;             
+    max-width: 1000px;           
+    padding: 20px;
+    justify-content: center;
+  }
+  
+
+  h1, h2, h3{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  p{
+    text-align: center;
+  }
+
+  a{
+    text-align: center;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
+  }
+  a:hover{
+    color: whitesmoke;
+  }
+  #logo{
+    display: block;
+  margin: 0 auto;
+  max-width: 250px; 
+  height: auto;
+  }
+
+  form{
+    align-items: center;
+  }
