@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Styles By Lizzy B Schedule</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Styles By Lizzy B Schedule</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div data-include="components/header.html"></div>
-    </header>
- 
-    <script src="scripts/HTMLInclude.min.js"></script>
+  <header>
+    <div data-include="components/header.html"></div>
+  </header>
+
+  <main>
+    <h2>Lizzy's Schedule</h2>
+    <div id="calendar"></div>
+    <button id="addEventBtn">Add Event</button>
+  </main>
+
+  <script src="scripts/HTMLInclude.min.js"></script>
+  <script src="scripts/schedule.js"></script>
 </body>
 </html>
