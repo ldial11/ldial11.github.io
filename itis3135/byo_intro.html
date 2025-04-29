@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BYO Intro</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+    <main>
+        <h2>BYO Intro</h2>
+        <h3>Time to fill out your own BYO introduction page!</h3>
+        <form action="submit.html" method="post">
+
+            <label for="Name">Name: </label>
+            <input type="text" id="name" name="name" placeholder="Lane Dial" required>
+
+            <label for="mascot">Mascot: </label>
+            <input type="text" name="mascot" id="mascot" placeholder="Lucious Diliphosaurus" required>
+
+            <label for="image">Submit an image: </label>
+            <input type="file" name="image" id="image" accept=".png, .jpg, .jpeg">
+
+            <label for="personal">Tell us about yourself: </label>
+            <textarea name="personal" id="personal" required></textarea>
+
+            <label for="work">Tell us about your work history: </label>
+            <textarea name="work" id="work" required></textarea>
+
+            <label for="school">Tell us about your academics: </label>
+            <textarea name="school" id="school" required></textarea>
+
+            <label for="platform">What computer platform do you primarily use? </label>
+            <input type="text" name="platform" id="platform" placeholder="Windows" required>
+
+            <label for="courses">What courses are you currently taking?</label>
+            <div id="courses-container">
+
+            </div>
+            <button type="button" id="add-course-btn">Add Course</button>
+
+
+
+            <label for="funny">Tell us something funny about you: </label>
+            <textarea name="funny" id="funny" placeholder="I do standup" required></textarea>
+
+            <label for="else">Anything else we should know: </label>
+            <textarea name="else" id="else" placeholder="If nothing N/A" required></textarea>
+
+
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+    </main>
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+
+    <script src="scripts/survey.js"></script>
+    <script src="scripts/HTMLInclude.min.js"></script>
+</body>
+</html>
